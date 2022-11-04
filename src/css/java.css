@@ -1,0 +1,119 @@
+main p{
+    display: none;
+}
+
+main section.quiz-section{
+    /* border: 4px solid green; */
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+main section.quiz-section div.quiz-box{
+    display: inline-block;
+    border: 10px solid rgb(202 202 202);
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 800px;
+    user-select: none;
+}
+
+main section.quiz-section div.quiz-box > :not(no){
+    margin: 15px 2px;
+}
+
+main section.quiz-section div.quiz-box form label{
+    display: block;
+    font-size: 25px;
+    background-color: #c6ffc6;
+    padding: 10px 2px;
+    margin: 2px 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -ms-user-select:none;
+}
+
+main section.quiz-section div.quiz-box form label p{
+    display: inline-block;
+}
+
+main section.quiz-section div.quiz-box form label > :not(no){
+    margin: 5px 15px 5px 4px;
+}
+
+main section.quiz-section div.quiz-box button{
+   padding: 5px 10px;
+   font-size: 1.4rem;
+   margin: 5px 2px;
+   border-radius: 4px;
+   background-color: #90d3ff;
+}
+
+main section.quiz-section div.quiz-box button.previous{
+   float:right;
+   background-color: #c6ffc6;
+ }
+
+main div.result-box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 20px solid gray; */
+    user-select: none;
+}
+
+main div.result-box-main > div.result-box-local{
+    /* border: 2px solid rgb(197, 63, 63); */
+    width: 800px;
+    padding: 10px 5px;
+}
+
+main div.result-box-main > div.result-box-local > div{
+   margin: 20px 0px;
+}
+
+main div.result-box-main > div.result-box-local > div > div:first-child{
+    background-color: rgb(221, 224, 221);
+    padding: 10px;
+}
+
+main div.result-box-main > div.result-box-local > div > div:nth-child(n+2){
+    background-color: rgb(231, 240, 231);
+    padding: 10px;
+    margin: 2px 0px;
+}
+
+@media screen and (max-width:810px){
+    main div.result-box-main > div.result-box-local{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    main section.quiz-section div.quiz-box{
+        border: 2px solid rgb(202 202 202);
+    }
+
+    main section.quiz-section > div.quiz-box > h4{
+        font-size: 18px;
+    }
+
+    main section.quiz-section > div.quiz-box > form > label{
+        font-size: 20px;
+    }
+
+    main div.result-box-main > div.result-box-local > div > div:first-child{
+        font-size: 14px;
+    }
+
+    main div.result-box-main > div.result-box-local > div > div:nth-child(n+2){
+        font-size: 14px;
+    }
+}
+

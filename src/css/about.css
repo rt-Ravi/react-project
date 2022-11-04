@@ -1,0 +1,139 @@
+main div.about-main{
+    /* border:2px solid gray; */
+    background: linear-gradient(to top right,rgb(54, 54, 54), rgb(2, 2, 2)) ;
+    padding: 20px 0px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.about-main > div.about-sub-con{
+    /* border:2px solid rgb(216, 32, 32); */
+    width: 1000px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main div.about-main > div.about-sub-con > div{
+    display: inline-block;
+    /* border:2px solid rgb(14, 13, 13); */
+}
+
+main div.about-main > div.about-sub-con > div.about-info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main div.about-main > div.about-sub-con > div.about-info button{
+   font-size: 2rem;
+   border: none;
+   padding: 5px 8px;
+   background-color: rgb(15, 15, 15);
+   color: white;
+}
+
+main div.about-main > div.about-sub-con > div.about-info h2{
+    font-size: 8rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+main div.about-main > div.about-sub-con > div.about-img-con{
+    width: 300px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+main div.about-main > div.about-sub-con > div.about-img-con img{
+    width: 100%;
+}
+
+main div.about-main > div.about-sub-con > div.about-img-con span{
+    position: absolute;
+    left: 0;
+    color: rgb(228, 228, 228);
+    text-align: justify;
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    letter-spacing: 2px;
+
+    transition: all 1s;
+
+}
+
+main div.about-main > div.about-sub-con > div.about-img-con:hover .about-img{
+   opacity: 0.5;
+ }
+
+main div.about-main > div.about-sub-con > div.about-img-con:hover .about-text{
+   height: 200px;
+   padding: 5px;
+}
+
+@media screen and (max-width:1020px){
+
+    main div.about-main > div.about-sub-con{
+        width: 98vw;
+    }
+
+    main div.about-main > div.about-sub-con > div.about-img-con{
+        width: 30%;
+        min-width: 250px;
+    }
+
+    main div.about-main > div.about-sub-con > div.about-info button{
+        font-size: 3.2vw;
+     }
+     
+     main div.about-main > div.about-sub-con > div.about-info h2{
+         font-size: 12vw;
+      }
+}
+
+
+@media screen and (max-width:800px){
+
+    main div.about-main > div.about-sub-con > div.about-info button{
+        font-size: 1.5rem;
+     }
+     
+     main div.about-main > div.about-sub-con > div.about-info h2{
+         font-size: 6rem;
+      }
+}
+
+@media screen and (max-width:500px){
+
+    main div.about-main > div.about-sub-con{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    main div.about-main > div.about-sub-con > div.about-info{
+       margin: 0;
+       margin-bottom: 30px;
+    }
+
+    main div.about-main > div.about-sub-con > div.about-img-con{
+        width: 94vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    main div.about-main > div.about-sub-con > div.about-info button{
+        font-size: 1.5rem;
+     }
+     
+     main div.about-main > div.about-sub-con > div.about-info h2{
+         font-size: 5rem;
+      }
+}

@@ -1,0 +1,9 @@
+footer{
+    page-break-after: always;
+}
+
+footer p{
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #e7e7e7;
+}

@@ -1,0 +1,182 @@
+main section.first-sec{
+    background-color: rgb(255, 255, 255);
+}
+
+main div.intro{
+    display: flex;
+    justify-content: center;
+    /* border: 4px solid rgb(212, 20, 20); */
+    padding: 50px 10px;
+}
+
+main div.intro span{
+   margin: 0px 40px;
+}
+
+main div.intro span:first-child{
+    /* border: 2px solid green; */
+    padding: 20px 5px;
+    text-align: center;
+}
+
+main div.intro span:first-child h1{
+   font-size: 30px;
+}
+
+main div.intro span:first-child > :not(no){
+    margin: 10px 4px;
+}
+
+main div.intro span:first-child div.con{
+    /* border: 1px solid orange; */
+    text-align: justify;
+    padding: 5px 2px;
+    width: 300px;
+    margin: auto;
+    background-color: #c6ffc6;
+}
+
+main div.intro span:first-child div.con :not(no){
+    padding: 7px 2px;
+}
+
+main div.intro span:first-child h4{
+   font-size: 1.2rem;
+   /* border: 1px solid yellow; */
+   height: 20px;
+}
+
+
+main div.intro span:last-child{
+    border: 10px solid rgb(162, 163, 162);
+    border-radius: 10px;
+    padding: 10px 5px;
+    width:740px;
+}
+
+main div.intro span:last-child img{
+    width: 714px;
+}
+
+main section.second-sec{
+   padding: 20px 0px 40px 0px;
+}
+
+main section.second-sec > h1{
+    text-align: center;
+    margin: 10px 5px;
+    padding: 4px 2px;
+    font-size: 2rem;
+}
+
+main section.second-sec > span{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px 0px;
+    /* border: 2px solid red; */
+    width: 1200px;
+    margin: auto;
+}
+
+main section.second-sec > span > div{
+    border: 2px solid black;
+    width: 240px;
+    margin: 0px auto;
+}
+
+main section.second-sec > span > div a{
+  text-decoration: none;
+  color: black;
+}
+
+main section.second-sec > span > div a div.sub-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+  height: 100%;
+ }
+
+main section.second-sec > span > div a div.sub-div img{
+   width: 100%;
+}
+
+main section.second-sec > span > div a div.sub-div h4{
+    display: block;
+    font-size: 1.2rem;
+    background-color: #8cdd8c;
+    /* border: 1px solid firebrick; */
+    text-align: center;
+    margin: 8px 0px 0px 0px;
+    padding: 4px 0px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -ms-user-select: none
+ }
+
+
+ @media screen and (max-width:1220px){
+    main section.second-sec > span{
+        width: 95vw;
+    }
+
+    main section.second-sec > span > div{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1180px){
+    main div.intro{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main div.intro span:first-child{
+       padding: 0;
+       width: 90vw;
+    }
+
+    main div.intro span:last-child{
+        width:91vw;
+        margin-top: 40px;
+    }
+
+    main div.intro span:first-child div.con :not(no){
+        margin: 2px 2px;
+    }
+
+    main div.intro span:last-child img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px){
+    main section.second-sec > span{
+       grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width:600px){
+    main section.second-sec > span{
+       grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:450px){
+    main section.second-sec > span{
+       grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:360px){
+
+    main div.intro span:first-child h1{
+        font-size: 22px;
+     }
+
+    main div.intro span:first-child div.con{
+        width: 100%;
+    }
+}
